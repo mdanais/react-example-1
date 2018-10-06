@@ -1,0 +1,25 @@
+.btn-default {
+    background-color: red;
+    width: 4em;
+    height: 1em;
+    padding: 0.5em;
+    margin: 0.5em 0.5em 0.5em 0;
+}
+.people-header, .person {
+  display: flex;
+  
+  .firstName {
+    width: 10em;
+  }
+  .lastName {
+  }
+  .button-cool {
+    @extend .btn-default;
+    background-color: purple;
+    
+  }
+  .button-cool:hover {
+    background-color: orangered;
+    cursor: pointer;
+  }
+}
